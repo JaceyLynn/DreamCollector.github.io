@@ -140,8 +140,9 @@ app.post('/generate-images', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-  console.log('✅ Server running at http://localhost:3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`✅ Server running at http://localhost:${PORT}`);
 });
 
 // Ensure all OpenAI API calls are routed through the server
