@@ -1,11 +1,8 @@
-# Node.js dependencies
-node_modules/
-
-# Environment variables
+# Ignore environment files
 .env
 
-# Logs
-*.log
+# Node modules
+node_modules/
 
 # macOS system files
 .DS_Store
@@ -19,4 +16,3 @@ build/
 
 # Temporary files
 *.tmp
-.env
