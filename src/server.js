@@ -143,3 +143,6 @@ app.post('/generate-images', async (req, res) => {
 app.listen(3000, () => {
   console.log('✅ Server running at http://localhost:3000');
 });
+
+// Ensure all OpenAI API calls are routed through the server
+// Removed direct API key usage from the front-end

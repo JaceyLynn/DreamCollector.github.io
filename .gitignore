@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Build files
+dist/
+build/
+
+# Temporary files
+*.tmp
