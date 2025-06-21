@@ -1,0 +1,27 @@
+{
+  "name": "dream-visualizer-0615",
+  "version": "1.0.0",
+  "description": "A web application that generates dream-like stories and visual prompts using OpenAI's API.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [
+    "OpenAI",
+    "DALL-E",
+    "story generation",
+    "image generation"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
