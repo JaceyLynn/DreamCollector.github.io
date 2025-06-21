@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Visualizer</title>
-    <link rel="stylesheet" href="/public/styles.css">
+  <meta charset="UTF-8" />
+  <title>Dream Collector</title>
+  <style>
+    body { font-family: sans-serif; background: #fdf6f0; padding: 40px; text-align: center; }
+    input { padding: 10px; margin: 8px; width: 200px; border-radius: 10px; border: 1px solid #ccc; }
+    button { padding: 10px 20px; font-weight: bold; border-radius: 10px; background: #a5d8ff; border: none; cursor: pointer; }
+    #prompt, #image-story { margin-top: 20px; color: #555; font-style: italic; }
+    #dreamImage { margin-top: 20px; max-width: 80%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Dream Visualizer</h1>
-        <p>Generate surreal images from your dreams.</p>
-        <input type="text" id="wordsInput" placeholder="Enter dream components (comma separated)">
-        <button id="generateStoryBtn">Generate Story</button>
-        <div id="storyOutput"></div>
-        <button id="generateImagePromptBtn">Generate Image Prompt</button>
-        <div id="imagePromptOutput"></div>
-        <button id="generateImagesBtn">Generate Images</button>
-        <div id="imagesOutput"></div>
-    </div>
-    <script src="script.js"></script>
+  <h1>Dream Collector 🌙</h1>
+  <p>Write 3 words / short phrases from your dream:</p>
+  <input id="word1" placeholder="Word 1" />
+  <input id="word2" placeholder="Word 2" />
+  <input id="word3" placeholder="Word 3" />
+  <br />
+  <button onclick="generate()">create dream</button>
+  <div id="image-story"></div>
+  <img id="dreamImage1" alt="Generated dream" />
+  <img id="dreamImage2" alt="Generated dream" />
+  <img id="dreamImage3" alt="Generated dream" />
+
+  <!-- load your external script -->
+  <script src="script.js"></script>
 </body>
 </html>
